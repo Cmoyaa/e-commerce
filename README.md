@@ -1,2 +1,2 @@
-# e-commerce-apple
- 
+# Clone front-end Apple.com
+
