@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+} 
+
+nav {
+    background-color: #333333;
+    color: white;
+    padding: 20px 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navSuperior {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 15%;
+}
+
+.buscar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    width: 300px;
+    padding: 2px 15px 2px 1px;
+    border-radius: 15px;
+    border: none;
+}
+
+.buscarInput {
+    border: none;
+    background-color: transparent;
+    margin-right: 10px;
+    padding: 10px;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-right: 1px solid gray;
+}
+
+.buscarInput::placeholder {
+    color: rgb(144, 144, 144);
+}
+
+.oferta {
+    font-size: 20px;
+    border-bottom: 3px solid #3181a8;
+    border-right: 3px solid #3181a8;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.navInferior {
+    background-color: rgb(245,245,247);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuItem {
+    margin-right: 50px;
+    padding: 10px 0;
+    cursor: pointer;
+    color: black;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.sliderWrapper{
+    display: flex;
+    width: 500vw;
+    background-color: black;
+    transition: all 1.5s ease-in-out;
+    height: 60vh;
+}
+
+.sliderItem {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    -webkit-box-reflect: below -50px linear-gradient(transparent, transparent, transparent, rgb(0, 1, 1));
+    height: 50vh;
+}
+
+.sliderImg {
+    width: 100vw;
+    max-width: 400px;
+}
+
+.sliderTitulo {
+    position: absolute;
+    top: 16%;
+    right: 23%;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+}
+
+.botonComprar {
+    position: absolute;
+    padding: 10px;
+    top: 52%;
+    right: 27%;
+    font-size: 20px;
+    font-weight: 500;
+    color: #3181a8;
+    border-radius: 3rem;
+    border: 1px solid #3181a8;
+    background-color: white;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.sliderPrecio {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+
+.botonComprar:hover {
+    background-color: #3181a8;
+    color: white;
+    transition: all 0.9s;
+}
